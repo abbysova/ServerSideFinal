@@ -42,7 +42,7 @@
             <input type="submit" value="Update Diagnosis" class="comfirm">
         </form>
 
-        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="delete">
+        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="pad_top">
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="View Result">
         </form>
