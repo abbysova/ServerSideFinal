@@ -1,36 +1,18 @@
 <%-- 
-    Document   : index
-    Created on : Apr 30, 2019, 9:48:50 PM
+    Document   : confirmDelete
+    Created on : May 1, 2019, 1:27:52 AM
     Author     : Abigailsova
 --%>
-
+<%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Breast Cancer</title>
+        <meta charset="utf-8">
+        <title>Cancer Diagnosis Database</title>
+        <link rel="stylesheet" href="<c:url value='/styles/main.css'/> ">
     </head>
     <body>
-        <div class="addCancer">
-        <form name="addCancer">     
-        <h1>Breast Cancer Diagnosis</h1>
-        <label>Identification Code:</label>
-        <input type="text" name="id" value="c:out value='${data.id}'/>"><br><br>
-        <label>Diagnosis:</label>
-        <input type="text" name="diagnosis" value="c:out value='${data.diagnosis}'/>"><br><br>
-        <label> Texture Mean:</label>
-        <input type="text" name="texture_Mean" value="c:out value='${data.texture_Mean}'/>"><br><br>
-        <label> Radius Mean: </label>
-        <input type="text" name="radius_Mean" value="c:out value='${data.radius_Mean}'/>"><br><br>
-        <label>Perimeter Mean:</label>
-        <input type="text" name="perimeter_Mean" value="c:out value='${data.perimeter_Mean}'/>"><br><br>
-        <input type="submit" value="Enter Result" class="margin_left">
-        </form>
-        <form name="viewCancer">
-            <input type="submit" value="View Cancer Result">
-        </form>
-    </div>
+        <h1>Cancer Diagnosis Database</h1>
+       <a href="<c:url value='/datatMaint?action=displayCancer'/>">View Diagnosis Information</a>
     </body>
 </html>
