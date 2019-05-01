@@ -25,7 +25,7 @@
         <label> Radius Mean: </label>
         <input type="text" name="radius_Mean" value="c:out value='${data.radius_Mean}'/>"><br><br>
         <label>Perimeter Mean:</label>
-        <input type="text" name="radius_Mean" value="c:out value='${data.radius_Mean}'/>"><br><br>
+        <input type="text" name="perimeter_Mean" value="c:out value='${data.perimeter_Mean}'/>"><br><br>
         <input type="submit" value="Enter Result" class="margin_left">
         </form>
         <form name="viewCancer">
