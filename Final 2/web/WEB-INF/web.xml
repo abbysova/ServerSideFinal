@@ -1,5 +1,3 @@
-//edit this
-
 
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
@@ -11,8 +9,8 @@
         <servlet-class></servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ProductAdminController</servlet-name>
-        <url-pattern>/productMaint</url-pattern>
+        <servlet-name>Breast Cancer Database</servlet-name>
+        <url-pattern>/breastCancerDiagnosis</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
@@ -25,12 +23,12 @@
     <security-constraint>
          <web-resource-collection>
              <web-resource-name>Protected Area</web-resource-name>
-             <url-pattern>/productMaint?action=displayProducts</url-pattern>
+             <url-pattern>/productMaint?action=displayDiagnosis</url-pattern>
     </web-resource-collection>
     
     <auth-constraint>
-        <role-name>programmer</role-name>
-        <role-name>service</role-name>
+        <role-name>phsyican</role-name>
+        <role-name>admin</role-name>
     </auth-constraint>
     
     <user-data-constraint>
@@ -41,14 +39,14 @@
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>
-            <form-login-page>/login.jsp</form-login-page>
-            <form-error-page>/login_error.jsp</form-error-page>
+            <form-login-page>/user.jsp</form-login-page>
+            <form-error-page>/invalid.jsp</form-error-page>
         </form-login-config>
     </login-config>
     
     <security-role>
-        <role-name>programmer</role-name>
-         <role-name>service</role-name>
+        <role-name>phsyican</role-name>
+         <role-name>admin</role-name>
     </security-role>
      </security-constraint>
     
