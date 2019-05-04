@@ -14,5 +14,7 @@
     <body>
         <h1>Cancer Diagnosis Database</h1>
        <a href="<c:url value='/datatMaint?action=displayCancer'/>">View Diagnosis Information</a>
+       <img src="http://students.css.edu/asova/cancer.jpg" alt="picture" style="width:300px;height:400px;"> <%-- photo source: https://www.bbc.com/news/uk-scotland-45381947--%>
+                                                                           
     </body>
 </html>
