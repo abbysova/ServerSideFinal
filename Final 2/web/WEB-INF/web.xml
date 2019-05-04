@@ -5,8 +5,8 @@
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
                         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name></servlet-name>
-        <servlet-class></servlet-class>
+        <servlet-name>DiagnosisDataController</servlet-name>
+        <servlet-class>breastcancer.data.DiagnosisDataControlle</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Breast Cancer Database</servlet-name>
