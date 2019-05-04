@@ -16,33 +16,33 @@
         <h1>Breast Cancer Diagnosis</h1>
         <p></p>
         <form action="<c:url value='/breastCancerDiagnosis'/>" 
-              method="post" class="delete">
+              method="post" class="BCD">
             <input type="hidden" name="action" value="updateDiagnosis">
             
-            <label class="pad_top">ID: </label>
+            <label class="diagnosisinput">ID: </label>
             <input type="text" name="id" id="id"
                    value="${data.id}"><br>
 
-            <label class="pad_top">Diagnosis:</label>
+            <label class="diagnosisinput">Diagnosis:</label>
             <input type="text" name="diagnosis" id="diagnosis"
                    value="${data.diagnosis}"><br>
 
-            <label class="pad_top">Radius Mean:</label>
+            <label class="diagnosisinput">Radius Mean:</label>
             <input type="text" name="radius" id="RadiusMean"
                    value="${data.RadiusMean}"><br>
             
-            <label class="pad_top">Texture Mean:</label>
+            <label class="diagnosisinput">Texture Mean:</label>
             <input type="text" name="texture" id="TextureMean"
                    value="${data.TextureMean}"><br>
             
-          <label class="pad_top">Perimeter Mean:</label>
+          <label class="diagnosisinput">Perimeter Mean:</label>
             <input type="text" name="perimeter" id="PerimeterMean"
                    value="${data.PerimeterMean}"><br>
 
-            <input type="submit" value="Update Diagnosis" class="comfirm">
+            <input type="submit" value="Update Diagnosis" class="buttons">
         </form>
 
-        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="pad_top">
+        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="View Result">
         </form>
