@@ -10,7 +10,9 @@
     <head>
         <meta charset="utf-8">
         <title>Breast Cancer Diagnosis</title>
-        <link rel="stylesheet" href="<c:url value='/styles/main.css'/> ">
+           <link rel = "stylesheet"
+    type = "text/css"
+   href = "style.css" /> 
     </head>
     <body>
         <h1>Breast Cancer Diagnosis</h1>

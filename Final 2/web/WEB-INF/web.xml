@@ -6,7 +6,7 @@
                         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>DiagnosisDataController</servlet-name>
-        <servlet-class>breastcancer.data.DiagnosisDataControlle</servlet-class>
+        <servlet-class>breastcancer.data.DiagnosisDataController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Breast Cancer Database</servlet-name>

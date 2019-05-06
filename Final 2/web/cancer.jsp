@@ -8,12 +8,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Breast Cancer Diagnosis</title>
-        <link rel="stylesheet" href="<c:url value='/styles/main.css'/> ">
+              <title>Breast Cancer Diagnosis</title>
+        <link rel = "stylesheet"
+    type = "text/css"
+   href = "style.css" /> 
     </head>
     <body>
         <h1>Breast Cancer Diagnosis</h1>
+        <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:300px;">
+        <p></p>
+        
+                    <a href="<c:url value='/dataMaint?action=displayDiagnosis&dataid=${i.id}'/>">Edit</a>
+                
+                    <a href="<c:url value='/dataMaint?action=deleteDiagnosis&dataid=${i.id}'/>">Delete</a>
+               
         <table>
             <tr>
                 <th>ID</th>
@@ -22,27 +30,20 @@
                 <th>Texture</th>
                 <th>Perimeter</th>
             </tr>
-            <c:forEach var="i" items="${id}">
             <tr>
-                <td>${i.id}</td>
-                <td>${i.diganosis}</td>
-                <td>${i.RadiusMean}</td>
-                <td>${i.TextureMean}</td>
-                <td>${i.PerimeterMean}</td>
+                <td><input type="text" name="id"><br></td>
+                <td><input type="text" name="diagnosis"><br></td>
+                <td><input type="text" name="radius"><br></td>
+                <td><input type="text" name="Texture"><br></td>
+                <td><input type="text" name="Perimeter"><br></td>
                 
-                <td>
-                    <a href="<c:url value='/dataMaint?action=displayDiagnosis&dataid=${i.id}'/>">Edit</a>
-                </td>
-                <td>
-                    <a href="<c:url value='/dataMaint?action=deleteDiagnosis&dataid=${i.id}'/>">Delete</a>
-                </td>
+               
             </tr>
-            </c:forEach>
         </table>
-        <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:400px;">
         <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="addDiagnosis">
             <input type="submit" value="Create Diagnosis">
         </form>
     </body>
 </html>
+

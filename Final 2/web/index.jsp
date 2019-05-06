@@ -9,7 +9,9 @@
     <head>
         <meta charset="utf-8">
         <title>Cancer Diagnosis Database</title>
-        <link rel="stylesheet" href="<c:url value='/styles/main.css'/> ">
+           <link rel = "stylesheet"
+    type = "text/css"
+   href = "style.css" /> 
     </head>
     <body>
         <h1>Cancer Diagnosis Database</h1>
