@@ -5,7 +5,6 @@
 --%>
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
     <head>
         <meta charset="utf-8">
         <title>Cancer Diagnosis Database</title>
@@ -14,9 +13,9 @@
    href = "style.css" /> 
     </head>
     <body>
+        <img src="http://students.css.edu/asova/cancer.jpg" alt="picture1" style="width:300px;height:300px;"> 
         <h1>Cancer Diagnosis Database</h1>
-       <a href="<c:url value='/datatMaint?action=displayCancer'/>">View Diagnosis Information</a>
-       <img src="http://students.css.edu/asova/cancer.jpg" alt="picture1" style="width:300px;height:400px;"> <%-- photo source: https://www.bbc.com/news/uk-scotland-45381947--%>
+       <a href="<c:url value='/user.html'/>">Physician Login</a>
                                                                            
     </body>
-</html>
+</html> 
