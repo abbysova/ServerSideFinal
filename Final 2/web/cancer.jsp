@@ -31,18 +31,18 @@
                 <td>${i.PerimeterMean}</td>
                 
                 <td>
-                    <a href="<c:url value='/Data?action=displayDiagnosis&dataid=${i.id}'/>">Edit</a>
+                    <a href="<c:url value='/dataMaint?action=displayDiagnosis&dataid=${i.id}'/>">Edit</a>
                 </td>
                 <td>
-                    <a href="<c:url value='/Data?action=deleteDiagnosis&dataid=${i.id}'/>">Delete</a>
+                    <a href="<c:url value='/dataMaint?action=deleteDiagnosis&dataid=${i.id}'/>">Delete</a>
                 </td>
             </tr>
             </c:forEach>
         </table>
-        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="pad_top">
+        <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:400px;">
+        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="addDiagnosis">
             <input type="submit" value="Create Diagnosis">
         </form>
     </body>
 </html>
-

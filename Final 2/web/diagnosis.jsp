@@ -14,6 +14,7 @@
     </head>
     <body>
         <h1>Breast Cancer Diagnosis</h1>
+        <img src="http://students.css.edu/asova/Cancer_4_image.jpg" alt="picture4" style="width:300px;height:400px;">
         <p></p>
         <form action="<c:url value='/breastCancerDiagnosis'/>" 
               method="post" class="BCD">
