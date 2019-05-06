@@ -15,7 +15,7 @@
     </head>
     <body>
         <h1>Do you want to delete this Diagnosis?</h1>
-
+        <img src="http://students.css.edu/asova/Cancer_3_image.jpg" alt="picture3" style="width:300px;height:400px;">
         <label>Id:</label>
         <span>${data.id}</span><br>
 
@@ -31,15 +31,15 @@
          <label>Perimeter Mean</label>
         <span>${data.PerimeterMean}</span><br>
 
-        <form action="" method="post" class="delete">
+        <form action="" method="post" class="buttons">
             <input type="hidden" name="action" value="deleteDiagnosis">
             <input type="hidden" name="productCode" value="${data.id}">
-            <input name="yesBtn" type="submit" value="Yes" class="confirm">
+            <input name="yesBtn" type="submit" value="Yes" class="buttons">
         </form>
         
-        <form action="" method="get" class="delete">
+        <form action="" method="get" class="buttons">
             <input type="hidden" name="action" value="displayDiagnosis">
-            <input type="submit" value="No" class="confirm">
+            <input type="submit" value="No" class="buttons">
         </form>            
     </body>
 </html>
