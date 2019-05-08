@@ -48,6 +48,15 @@
         <form action="<c:url value='/searchResult.jsp'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="View Result">
+            <div class="popup" onclick="submit">
+                <span class="popup" id="popup">Your data was changed to the following:<br>
+                                                Id- ${data.id}<br>
+                                                Diagnosis- ${data.diagnosis}<br>
+                                                Radius Mean- ${data.RadiusMean}<br>
+                                                Texture Mean- ${data.TextureMean}<br>
+                                                Perimeter Mean- ${data.PerimeterMean}<br>
+                                                                             
+               </div>
         </form>
     </body>
 </html>
