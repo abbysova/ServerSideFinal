@@ -45,7 +45,7 @@
             <input type="submit" value="Update Diagnosis" class="buttons">
         </form>
 
-        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons">
+        <form action="<c:url value='/searchResult.jsp'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="View Result">
         </form>
