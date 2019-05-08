@@ -18,9 +18,9 @@
         <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:300px;">
         <p></p>
         
-                    <a href="<c:url value='/dataMaint?action=displayDiagnosis&dataid=${i.id}'/>">Edit</a>
+                    <a href="<c:url value='/diagnosis.jsp'/>">Edit</a>
                 
-                    <a href="<c:url value='/dataMaint?action=deleteDiagnosis&dataid=${i.id}'/>">Delete</a>
+                    <a href="<c:url value='/confirmDelete.jsp'/>">Delete</a>
                
         <table>
             <tr>
