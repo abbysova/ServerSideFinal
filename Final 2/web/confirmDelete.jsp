@@ -2,6 +2,7 @@
     Document   : confirmDelete
     Created on : May 1, 2019, 1:27:52 AM
     Author     : Abigailsova
+This page is used to Delete an entry that was entered on the previous page to delete it 
 --%>
 
 <%@page contentType="text/html" pageEncoding="utf-8"%>
@@ -17,7 +18,7 @@
     </head>
     <body>
         <h1>Do you want to delete this Diagnosis?</h1>
-        <img src="http://students.css.edu/asova/Cancer_3_image.jpg" alt="picture3" style="width:300px;height:400px;">
+        <img src="http://students.css.edu/asova/Cancer_3_image.jpg" alt="picture3" style="width:300px;height:300px;"><!--Image resource 3-->
         <label>Id:</label>
         <span>${data.id}</span><br>
 
@@ -33,13 +34,13 @@
          <label>Perimeter Mean</label>
         <span>${data.PerimeterMean}</span><br>
 
-        <form action="" method="post" class="buttons">
+        <form action="" method="post" class="buttons"> <!--when yes is selected delete the entry-->
             <input type="hidden" name="action" value="deleteDiagnosis">
             <input type="hidden" name="productCode" value="${data.id}">
             <input name="yesBtn" type="submit" value="Yes" class="buttons">
         </form>
         
-        <form action="" method="get" class="buttons">
+        <form action="" method="get" class="buttons"><!--When no is selected do not delete the entry-->
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="No" class="buttons">
         </form>            

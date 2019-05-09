@@ -1,3 +1,6 @@
+<!--Configures MySQL database. 
+    Validates database login creditals 
+    Imports xml schemas-->
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" 
              xmlns="http://xmlns.jcp.org/xml/ns/persistence" 

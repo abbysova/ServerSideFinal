@@ -1,8 +1,10 @@
 <%-- 
-    Document   : cancer
+    Document   : cancer.jsp
     Created on : May 1, 2019, 2:17:00 AM
     Author     : Abigailsova
+This page serves as the create function for the database from the user.
 --%>
+
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE hmtl>
@@ -15,12 +17,12 @@
     </head>
     <body>
         <h1>Breast Cancer Diagnosis</h1>
-        <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:300px;">
+        <img src="http://students.css.edu/asova/Cancer_2_image.jpg" alt="picture2" style="width:300px;height:300px;"><!--Image resource 1-->
         <p></p>
         
-                    <a href="<c:url value='/diagnosis.jsp'/>">Edit</a>
+                    <a href="<c:url value='/diagnosis.jsp'/>">Edit</a> <!--links to edit page-->
                 
-                    <a href="<c:url value='/confirmDelete.jsp'/>">Delete</a>
+                    <a href="<c:url value='/confirmDelete.jsp'/>">Delete</a><!--Links to delete page--> 
                
         <table>
             <tr>
@@ -40,7 +42,7 @@
                
             </tr>
         </table>
-        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons">
+        <form action="<c:url value='/breastCancerDiagnosis'/>" method="get" class="buttons"> 
             <input type="hidden" name="action" value="addDiagnosis">
             <input type="submit" value="Create Diagnosis">
         </form>

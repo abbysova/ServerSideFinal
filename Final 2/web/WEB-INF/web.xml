@@ -1,14 +1,14 @@
-
+<!--Updated May 4, 2019--> 
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.4" 
   xmlns="http://java.sun.com/xml/ns/j2ee" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"> 
     <servlet>
-        <servlet-name>breastCancerDiagnosis</servlet-name>
-        <servlet-class>Data.breastCancerDiagnosis</servlet-class>
+        <servlet-name>breastCancerDiagnosis</servlet-name><!--Edited Servlet name to match-->
+        <servlet-class>Data.breastCancerDiagnosis</servlet-class><!--Edited class-->
     </servlet>
-    <servlet-mapping>
+    <servlet-mapping><!--Edited mapping-->
         <servlet-name>Breast Cancer Database</servlet-name>
         <url-pattern>/breastCancerDiagnosis</url-pattern>
     </servlet-mapping>
@@ -16,17 +16,17 @@
         <session-timeout>30</session-timeout>
         <tracking-mode>COOKIE</tracking-mode>
     </session-config>
-    <welcome-file-list>
+    <welcome-file-list><!--Welcome file is index.jsp-->
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
     
-    <security-constraint>
+    <security-constraint><!--Protected Areas-->
          <web-resource-collection>
              <web-resource-name>Protected Area</web-resource-name>
              <url-pattern>/confirmDelete.jsp</url-pattern>
     </web-resource-collection>
     
-    <auth-constraint>
+    <auth-constraint><!--Establishes roles-->
         <role-name>phsyican</role-name>
         <role-name>admin</role-name>
     </auth-constraint>
@@ -36,7 +36,7 @@
     </user-data-constraint>
    
    
-    <login-config>
+    <login-config><!--Handles login configurations-->
         <auth-method>FORM</auth-method>
         <form-login-config>
             <form-login-page>/user.jsp</form-login-page>
@@ -44,7 +44,7 @@
         </form-login-config>
     </login-config>
     
-    <security-role>
+    <security-role><!--Handles secure login-->
         <role-name>phsyican</role-name>
          <role-name>admin</role-name>
     </security-role>

@@ -1,8 +1,9 @@
+<!--Updated May 9, 2019-->
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/breastCancerDiagnosis">
+<Context antiJARLocking="true" path="/breastCancerDiagnosis"><!--Changed path-->
     <Realm className="org.apache.catalina.realm.JDBCRealm" 
            connectionName="root" connectionPassword="Pokemon151" 
-           connectionURL="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull" 
+           connectionURL="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull" <!--Changed Connection URL-->
            debug="99" driverName="com.mysql.jdbc.Driver" />
 </Context>
 

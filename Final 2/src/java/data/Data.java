@@ -21,18 +21,22 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  *
  * @author Mariah
+ * Retrevies data from table in MySQL Workbench 
+ * @version 1.0
+ * @update April 29, 2019
  */
 @Entity
 @Table(name = "data")
 @XmlRootElement
-@NamedQueries({
+@NamedQueries({//Queries 
     @NamedQuery(name = "Data.findAll", query = "SELECT d FROM Data d")
     , @NamedQuery(name = "Data.findById", query = "SELECT d FROM Data d WHERE d.id = :id")
     , @NamedQuery(name = "Data.findByDiagnosis", query = "SELECT d FROM Data d WHERE d.diagnosis = :diagnosis")
     , @NamedQuery(name = "Data.findByRadiusMean", query = "SELECT d FROM Data d WHERE d.radiusMean = :radiusMean")
     , @NamedQuery(name = "Data.findByTextureMean", query = "SELECT d FROM Data d WHERE d.textureMean = :textureMean")
     , @NamedQuery(name = "Data.findByPerimeterMean", query = "SELECT d FROM Data d WHERE d.perimeterMean = :perimeterMean")})
-public class Data implements Serializable {
+
+public class Data implements Serializable {//Table 
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -63,56 +67,55 @@ public class Data implements Serializable {
         this.diagnosis = diagnosis;
     }
 
-    public Integer getId() {
+    public Integer getId() {//Get
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Integer id) {//Set
         this.id = id;
     }
 
-    public String getDiagnosis() {
+    public String getDiagnosis() {//Get
         return diagnosis;
     }
 
-    public void setDiagnosis(String diagnosis) {
+    public void setDiagnosis(String diagnosis) {//Set
         this.diagnosis = diagnosis;
     }
 
-    public BigDecimal getRadiusMean() {
+    public BigDecimal getRadiusMean() {//Get 
         return radiusMean;
     }
 
-    public void setRadiusMean(BigDecimal radiusMean) {
+    public void setRadiusMean(BigDecimal radiusMean) {//Set
         this.radiusMean = radiusMean;
     }
 
-    public BigDecimal getTextureMean() {
+    public BigDecimal getTextureMean() {//Get
         return textureMean;
     }
 
-    public void setTextureMean(BigDecimal textureMean) {
+    public void setTextureMean(BigDecimal textureMean) {//Set
         this.textureMean = textureMean;
     }
 
-    public BigDecimal getPerimeterMean() {
+    public BigDecimal getPerimeterMean() {//GEt
         return perimeterMean;
     }
 
-    public void setPerimeterMean(BigDecimal perimeterMean) {
+    public void setPerimeterMean(BigDecimal perimeterMean) {//Set
         this.perimeterMean = perimeterMean;
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() {//Hashing function 
         int hash = 0;
         hash += (id != null ? id.hashCode() : 0);
         return hash;
     }
 
     @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+    public boolean equals(Object object) {//TO DO: Mariah, please put fill out what this does
         if (!(object instanceof Data)) {
             return false;
         }
@@ -124,7 +127,7 @@ public class Data implements Serializable {
     }
 
     @Override
-    public String toString() {
+    public String toString() {//Transform data to string 
         return "data.Data[ id=" + id + " ]";
     }
     

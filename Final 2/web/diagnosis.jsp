@@ -2,6 +2,7 @@
     Document   : diagnosis
     Created on : May 1, 2019, 2:02:32 AM
     Author     : Abigailsova
+This page is used for editing a diagnosis
 --%>
 <%@page contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -16,9 +17,9 @@
     </head>
     <body>
         <h1>Breast Cancer Diagnosis</h1>
-        <img src="http://students.css.edu/asova/Cancer_4_image.jpg" alt="picture4" style="width:300px;height:400px;">
+        <img src="http://students.css.edu/asova/Cancer_4_image.jpg" alt="picture4" style="width:300px;height:300px;"><!--picture resource 4-->
         <p></p>
-        <form action="<c:url value='/breastCancerDiagnosis'/>" 
+        <form action="<c:url value='/diagnosis.jsp'/>" 
               method="post" class="BCD">
             <input type="hidden" name="action" value="updateDiagnosis">
             
@@ -48,7 +49,7 @@
         <form action="<c:url value='/searchResult.jsp'/>" method="get" class="buttons">
             <input type="hidden" name="action" value="displayDiagnosis">
             <input type="submit" value="View Result">
-            <div class="popup" onclick="submit">
+            <div class="popup" onclick="submit"><!--Popup with changed information-->
                 <span class="popup" id="popup">Your data was changed to the following:<br>
                                                 Id- ${data.id}<br>
                                                 Diagnosis- ${data.diagnosis}<br>
