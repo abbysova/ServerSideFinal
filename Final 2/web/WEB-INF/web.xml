@@ -5,8 +5,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"> 
     <servlet>
-        <servlet-name>DiagnosisDataController</servlet-name>
-        <servlet-class>breastcancer.data.DiagnosisDataController</servlet-class>
+        <servlet-name>breastCancerDiagnosis</servlet-name>
+        <servlet-class>Data.breastCancerDiagnosis</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Breast Cancer Database</servlet-name>
@@ -23,7 +23,7 @@
     <security-constraint>
          <web-resource-collection>
              <web-resource-name>Protected Area</web-resource-name>
-             <url-pattern>/dataMaint?action=displayDiagnosis</url-pattern>
+             <url-pattern>/confirmDelete.jsp</url-pattern>
     </web-resource-collection>
     
     <auth-constraint>

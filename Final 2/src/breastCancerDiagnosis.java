@@ -1,7 +1,6 @@
 package data;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 public class breastCancerDiagnosis extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
      *
      * @param request servlet request
      * @param response servlet response
